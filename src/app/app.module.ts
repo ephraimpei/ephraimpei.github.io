@@ -1,18 +1,33 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
-
-import { AppComponent } from './app.component';
-
+import { AppRoot } from './root/app.root';
+import { NavBarLayout } from './layouts';
+import {
+  HomePage,
+  ResumePage,
+  AboutPage,
+  ProjectsPage
+} from './pages';
+import { NotFoundPage } from './pages/not-found/not-found.page';
+import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppRoot,
+    HomePage,
+    ResumePage,
+    AboutPage,
+    ProjectsPage,
+    NavBarLayout,
+    NotFoundPage
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppRoot]
 })
 export class AppModule { }

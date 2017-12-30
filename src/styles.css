@@ -1,1 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  width: 100%;
+}
+
+/* <li> reset */
+li {
+  list-style: none;
+}
+
+/* <a> reset */
+a {
+  color: inherit;
+  text-decoration: none; 
+  cursor: pointer;  
+}
