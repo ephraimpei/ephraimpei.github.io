@@ -18,11 +18,11 @@ export const appRoutes: Routes = [
     component: ProjectsPage
   },
   {
-    path: 'resumes',
+    path: 'resume',
     component: ResumePage
   },
   {
-    path: 'abouts',
+    path: 'about',
     component: AboutPage
   },
   {
