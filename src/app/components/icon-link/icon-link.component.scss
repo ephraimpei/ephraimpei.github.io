@@ -26,5 +26,19 @@
   .icon-link
   {
     margin: 20px 0;
+
+    img
+    {
+      transition: height, width .3s ease-in-out;
+
+      &:hover
+      {
+        @include respond-above(tablet)
+        {
+          height: 65px;
+          width: 65px;
+        }
+      }
+    }
   }
 }

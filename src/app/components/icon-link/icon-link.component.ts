@@ -4,7 +4,7 @@ import { Component, OnInit, Input } from '@angular/core';
   selector: 'app-icon-link',
   template: `
     <div class='icon-link'>
-      <a>
+      <a href={{href}}>
         <img src={{src}} />
       </a>
     </div>
@@ -15,5 +15,8 @@ export class IconLink {
 
   @Input()
   src: string;
+
+  @Input()
+  href: string;
 
 }
