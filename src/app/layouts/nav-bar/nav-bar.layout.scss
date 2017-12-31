@@ -1,3 +1,39 @@
-nav.header {
-  text-align: center;
+@import 'variables';
+@import 'mixins';
+
+nav.header
+{
+  display: flex;
+  box-shadow: $drop-shadow;
+  padding: 10px 0%;
+
+  a
+  {
+    width: 25%;
+    text-align: center;
+
+    &.active
+    {
+      font-weight: $bold;
+      cursor: default;
+    }
+
+    @include respond-to(desktop)
+    {
+      transition: transform .3s ease-in-out;
+
+      &:hover:not(.active)
+      {
+        font-weight: $bold;
+        transform: scale(1.2);
+      }
+    }
+  }
+
+  @include respond-to(desktop)
+  {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 20%;
+  }
 }

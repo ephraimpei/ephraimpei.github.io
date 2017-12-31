@@ -1,0 +1,11 @@
+@import 'mixins';
+
+div#root
+{
+  margin: 0 5vw;
+
+  @include respond-to(desktop)
+  {
+    margin: 0 10vw;
+  }
+}
