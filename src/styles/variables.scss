@@ -3,6 +3,10 @@ $light: 300;
 $normal: 400;
 $bold: 700;
 
+// Colors
+$white: #ffffff;
+$black: #000000;
+
 // Breakpoints
 $x-small: 0px;
 $small: 450px;
@@ -13,3 +17,11 @@ $hd: 1440px;
 
 // Effects
 $drop-shadow: 0 10px 6px -6px #777;
+
+// Z Indexes
+$z-index-0: 0;
+$z-index-1: 1;
+$z-index-2: 2;
+
+// Misc.
+$max-height-bg: 770px;

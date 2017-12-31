@@ -1,4 +1,6 @@
-div#root
+@import 'variables';
+
+#root
 {
   height: 100%;
   background-image: url("../../assets/svg/nyc-skyline.svg");
@@ -7,9 +9,14 @@ div#root
   background-attachment: fixed;
   background-size: 100%;
   transition: background-size .3s ease-in-out;
+  z-index: $z-index-0;
 
   &.small-bg
   {
     background-size: 65%;
+  }
+
+  @media only screen and (max-height: $max-height-bg) {
+    background-size: 100% !important;
   }
 }

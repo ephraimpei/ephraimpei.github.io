@@ -40,3 +40,21 @@
     }
   }
 }
+
+@mixin respond-above($device)
+{
+  @if $device == tablet
+  {
+    @media only screen and (min-width: $small)
+    {
+      @content;
+    }
+  }
+  @else if $device == desktop
+  {
+    @media only screen and (min-width: $large)
+    {
+      @content;
+    }
+  }
+}

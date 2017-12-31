@@ -3,7 +3,11 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppRoot } from './root/app.root';
-import { NavBarLayout } from './layouts';
+import { IconLink } from './components';
+import {
+  NavBarLayout,
+  SocialIconsTray
+} from './layouts';
 import {
   HomePage,
   ResumePage,
@@ -21,7 +25,9 @@ import { appRoutes } from './routes';
     AboutPage,
     ProjectsPage,
     NavBarLayout,
-    NotFoundPage
+    NotFoundPage,
+    SocialIconsTray,
+    IconLink
   ],
   imports: [
     BrowserModule,

@@ -1,11 +1,19 @@
 @import 'variables';
 @import 'mixins';
 
-nav.header
+.shadow-mask
+{
+  background: $white;
+  z-index: $z-index-2;
+  padding-bottom: 10px;
+}
+
+.header
 {
   display: flex;
   box-shadow: $drop-shadow;
   padding: 10px 0%;
+  background: $white;
 
   a
   {
@@ -18,7 +26,7 @@ nav.header
       cursor: default;
     }
 
-    @include respond-to(desktop)
+    @include respond-above(tablet)
     {
       transition: transform .3s ease-in-out;
 
@@ -30,7 +38,7 @@ nav.header
     }
   }
 
-  @include respond-to(desktop)
+  @include respond-above(tablet)
   {
     width: 60%;
     margin: 0 auto;

@@ -1,4 +1,22 @@
-main.home-page
+@import 'variables';
+
+.home-page
 {
   text-align: center;
+  z-index: $z-index-1;
+  padding-top: 30px;
+
+  .name
+  {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-height: $max-height-bg) {
+    height: 80%;
+    width: 40%;
+    margin: 0 auto;
+    background: $white;
+    border-left: 2px solid $black;
+    border-right: 2px solid $black;
+  }
 }
