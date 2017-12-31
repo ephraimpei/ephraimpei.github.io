@@ -1,0 +1,48 @@
+@import 'mixins';
+
+h1
+{
+  font-size: 2rem;
+  line-height: 1.1;
+
+  @include respond-to(desktop)
+  {
+    font-size: 3rem;
+    line-height: 1.25;
+  }
+}
+
+h2
+{
+  font-size: 1.625rem;
+  line-height: 1.15384615em;
+
+  @include respond-to(desktop)
+  {
+    font-size: 2.25rem;
+    line-height: 1.25rem;
+  }
+}
+
+h3
+{
+  font-size: 1.375rem;
+  line-height: 1.13636364rem;
+
+  @include respond-to(desktop)
+  {
+    font-size: 1.75rem;
+    line-height: 1.25rem;
+  }
+}
+
+h4
+{
+  font-size: 1.125rem;
+  line-height: 1.11111111rem;
+
+  @include respond-to(desktop)
+  {
+    line-height: 1.22222222rem;
+  }
+}

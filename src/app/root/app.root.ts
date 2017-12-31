@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.root.scss']
 })
 export class AppRoot {
-  title = 'app';
+  private isHomeOrAboutPage = false;
+
+  constructor(private router: Router) {
+    const AppRootRef = this;
+
+    router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        AppRootRef.isHomeOrAboutPage = event.url === '/' || event.url === '/about';
+      }
+    });
+  }
+
+  getClass() {
+    return this.isHomeOrAboutPage ? 'small-bg' : '';
+  }
 }
