@@ -6,6 +6,7 @@ This personal site is an entirely static site (no backend) that was built with s
 ```
 - Angular5 components and routing
 - Mobile first responsive SASS
+- Cool CSS3 animations
 - Automated JSON serialization for content
 - AWS S3 Hosting
 - Cloudflare CDN propagation

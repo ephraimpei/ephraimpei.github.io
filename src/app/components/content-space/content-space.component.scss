@@ -8,6 +8,38 @@
   height: 100%;
   background: transparent;
   margin: auto;
+
+  &::ng-deep summary
+  {
+    overflow-y: scroll;
+  }
+}
+
+:host-context(.about-page)
+{
+  .content-space
+  {
+    width: 80%;
+    background: $white;
+    border: 2px solid $medium-grey;
+
+    @include respond-to(tablet)
+    {
+      width: 75%;
+    }
+
+    @include respond-to(desktop)
+    {
+      width: 60%;
+    }
+  }
+
+  &::ng-deep summary
+  {
+    max-height: 410px;
+    padding: 15px 25px;
+    line-height: 2;
+  }
 }
 
 :host-context(.app-base-layer.curtains-active)

@@ -1,0 +1,13 @@
+@import 'variables';
+@import 'mixins';
+
+.about-page
+{
+  position: relative;
+  top: 15px;
+
+  @include respond-above(tablet)
+  {
+    top: 25px;
+  }
+}

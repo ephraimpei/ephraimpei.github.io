@@ -12,7 +12,7 @@
   }
 
   @media only screen and (max-height: $max-height-bg) {
-    height: 80%;
+    height: calc(100% - 30px);
     width: 40%;
     margin: 0 auto;
     background: $white;
