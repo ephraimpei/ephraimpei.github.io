@@ -3,6 +3,8 @@
   <main [class]="getAppClass()">
     <aside class="left-curtain"></aside>
     <aside class="right-curtain"></aside>
-    <router-outlet></router-outlet>
+    <app-content-space>
+      <router-outlet></router-outlet>
+    </app-content-space>
   </main>
 </div>

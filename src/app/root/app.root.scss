@@ -46,15 +46,15 @@
       .left-curtain
       {
         border-right: 2px solid $black;
-        width: 10%;
         animation: show-curtains $background-img-trans-time linear;
+        width: 10%;
       }
 
       .right-curtain
       {
         border-left: 2px solid $black;
-        width: 10%;
         animation: show-curtains $background-img-trans-time linear;
+        width: 10%;
       }
 
       @include respond-above(desktop)

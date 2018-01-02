@@ -11,7 +11,7 @@ const CURTAINS_PAGES = ['/thoughts', '/projects', '/resume'];
 export class AppRoot {
   private isNotCurtainsPage = false;
   private curtainsToNotCurtainsPage = false;
-  private curtainsToCurtainsPage = false;
+  // private curtainsToCurtainsPage = false;
   private previousUrl: string;
 
   constructor(private router: Router) {
@@ -23,7 +23,7 @@ export class AppRoot {
         const isFromCurtainsPage = CURTAINS_PAGES.some(page => page === AppRootRef.previousUrl);
 
         AppRootRef.curtainsToNotCurtainsPage = !isGoingToCurtainsPage && isFromCurtainsPage;
-        AppRootRef.curtainsToCurtainsPage = isGoingToCurtainsPage && isFromCurtainsPage;
+        // AppRootRef.curtainsToCurtainsPage = isGoingToCurtainsPage && isFromCurtainsPage;
         AppRootRef.isNotCurtainsPage = !isGoingToCurtainsPage;
         AppRootRef.previousUrl = event.url;
       }
@@ -38,7 +38,6 @@ export class AppRoot {
     let klass = 'app-base-layer';
     klass += this.isNotCurtainsPage ? '' : ' curtains-active';
     klass += this.curtainsToNotCurtainsPage ? ' curtains-inactive' : '';
-    klass += this.curtainsToCurtainsPage ? ' animations-inactive' : '';
     return klass;
   }
 }
