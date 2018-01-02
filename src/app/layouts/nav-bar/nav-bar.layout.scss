@@ -26,7 +26,7 @@
       cursor: default;
     }
 
-    @include respond-above(tablet)
+    @include respond-above(desktop)
     {
       transition: transform $background-img-trans-time ease-in-out;
 
@@ -38,7 +38,7 @@
     }
   }
 
-  @include respond-above(tablet)
+  @include respond-above(desktop)
   {
     width: 60%;
     margin: 0 auto;

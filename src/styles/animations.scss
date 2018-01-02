@@ -23,11 +23,35 @@
   }
 }
 
+@keyframes hide-right-curtains-mobile {
+  0%
+  {
+    border-left: 2px solid $black;
+    width: 10%;
+  }
+  100%
+  {
+    width: 50%;
+  }
+}
+
 @keyframes hide-left-curtains {
   0%
   {
     border-right: 2px solid $black;
     width: 17.5%;
+  }
+  100%
+  {
+    width: 50%;
+  }
+}
+
+@keyframes hide-left-curtains-mobile {
+  0%
+  {
+    border-right: 2px solid $black;
+    width: 10%;
   }
   100%
   {
