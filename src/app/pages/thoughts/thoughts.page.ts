@@ -2,17 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-thoughts',
-  template: `
-    <main class="thoughts-page">
-      <app-content-space></app-content-space>
-    </main>
-  `,
-  styles: [
-    `.thoughts-page
-    {
-      height: 100%;
-    }`
-  ]
+  templateUrl: './thoughts.page.html',
+  styleUrls: ['./thoughts.page.scss']
 })
 export class ThoughtsPage {
 
