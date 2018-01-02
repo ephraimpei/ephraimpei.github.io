@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-const CURTAINS_PAGES = ['/thoughts', '/projects', '/resumes'];
+const CURTAINS_PAGES = ['/thoughts', '/projects', '/resume'];
 
 @Component({
   selector: 'app-root',
@@ -9,8 +9,9 @@ const CURTAINS_PAGES = ['/thoughts', '/projects', '/resumes'];
   styleUrls: ['./app.root.scss']
 })
 export class AppRoot {
-  private isHomeOrAboutPage = false;
-  private isComingFromCurtainsPage = false;
+  private isNotCurtainsPage = false;
+  private curtainsToNotCurtainsPage = false;
+  private curtainsToCurtainsPage = false;
   private previousUrl: string;
 
   constructor(private router: Router) {
@@ -18,23 +19,26 @@ export class AppRoot {
 
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        const isHomeOrAboutPage = event.url === '/' || event.url === '/about';
-        AppRootRef.isComingFromCurtainsPage =
-          isHomeOrAboutPage && CURTAINS_PAGES.some(page => page === AppRootRef.previousUrl);
-        AppRootRef.isHomeOrAboutPage = isHomeOrAboutPage;
+        const isGoingToCurtainsPage = CURTAINS_PAGES.some(page => page === event.url);
+        const isFromCurtainsPage = CURTAINS_PAGES.some(page => page === AppRootRef.previousUrl);
+
+        AppRootRef.curtainsToNotCurtainsPage = !isGoingToCurtainsPage && isFromCurtainsPage;
+        AppRootRef.curtainsToCurtainsPage = isGoingToCurtainsPage && isFromCurtainsPage;
+        AppRootRef.isNotCurtainsPage = !isGoingToCurtainsPage;
         AppRootRef.previousUrl = event.url;
       }
     });
   }
 
   getRootClass() {
-    return this.isHomeOrAboutPage ? 'small-bg' : '';
+    return this.isNotCurtainsPage ? 'small-bg' : '';
   }
 
   getAppClass() {
     let klass = 'app-base-layer';
-    klass += this.isHomeOrAboutPage ? '' : ' curtains-active';
-    klass += this.isComingFromCurtainsPage ? ' curtains-inactive' : '';
+    klass += this.isNotCurtainsPage ? '' : ' curtains-active';
+    klass += this.curtainsToNotCurtainsPage ? ' curtains-inactive' : '';
+    klass += this.curtainsToCurtainsPage ? ' animations-inactive' : '';
     return klass;
   }
 }

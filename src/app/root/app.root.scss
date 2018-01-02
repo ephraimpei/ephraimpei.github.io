@@ -72,21 +72,18 @@
       .left-curtain
       {
         animation: hide-left-curtains-mobile $background-img-trans-time linear;
+
+        @include respond-above(desktop)
+        {
+          animation: hide-left-curtains $background-img-trans-time linear;
+        }
       }
 
       .right-curtain
       {
         animation: hide-right-curtains-mobile $background-img-trans-time linear;
-      }
 
-      @include respond-above(desktop)
-        {
-          .left-curtain
-        {
-          animation: hide-left-curtains $background-img-trans-time linear;
-        }
-
-        .right-curtain
+        @include respond-above(desktop)
         {
           animation: hide-right-curtains $background-img-trans-time linear;
         }

@@ -1,0 +1,26 @@
+@import 'variables';
+@import 'mixins';
+@import 'animations';
+
+.content-space
+{
+  width: 80%;
+  height: 100%;
+  background: $white;
+  margin: auto;
+  animation: expand-80 $background-img-trans-time linear;
+
+  @include respond-above(desktop)
+  {
+    width: 65%;
+    animation: expand-65 $background-img-trans-time linear;
+  }
+}
+
+:host-context(.app-base-layer.animations-inactive)
+{
+  .content-space
+  {
+    animation: none;
+  }
+}

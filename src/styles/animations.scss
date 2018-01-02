@@ -58,3 +58,25 @@
     width: 50%;
   }
 }
+
+@keyframes expand-80 {
+  0%
+  {
+    width: 0;
+  }
+  100%
+  {
+    width: 80%;
+  }
+}
+
+@keyframes expand-65 {
+  0%
+  {
+    width: 0;
+  }
+  100%
+  {
+    width: 65%;
+  }
+}
