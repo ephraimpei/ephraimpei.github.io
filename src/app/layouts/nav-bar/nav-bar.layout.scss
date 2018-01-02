@@ -28,7 +28,7 @@
 
     @include respond-above(tablet)
     {
-      transition: transform .3s ease-in-out;
+      transition: transform $background-img-trans-time ease-in-out;
 
       &:hover:not(.active)
       {

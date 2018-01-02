@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppRoot } from './root/app.root';
-import { IconLink } from './components';
+import {
+  IconLink,
+  ContentSpace
+} from './components';
 import {
   NavBarLayout,
   SocialIconsTray
@@ -19,15 +22,20 @@ import { appRoutes } from './routes';
 
 @NgModule({
   declarations: [
+    // Root
     AppRoot,
+    // Pages
     HomePage,
     ResumePage,
     AboutPage,
     ProjectsPage,
-    NavBarLayout,
     NotFoundPage,
+    // Layouts
+    NavBarLayout,
     SocialIconsTray,
-    IconLink
+    // Components
+    IconLink,
+    ContentSpace
   ],
   imports: [
     BrowserModule,

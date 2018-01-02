@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 #root
 {
@@ -8,7 +9,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
-  transition: background-size .3s ease-in-out;
+  transition: background-size $background-img-trans-time ease-in-out;
   z-index: $z-index-0;
 
   &.small-bg
