@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-const CURTAINS_PAGES = ['/thoughts', '/projects', '/resume'];
+const CURTAINS_PAGES = ['/thoughts', '/projects'];
 
 @Component({
   selector: 'app-root',
@@ -9,9 +9,9 @@ const CURTAINS_PAGES = ['/thoughts', '/projects', '/resume'];
   styleUrls: ['./app.root.scss']
 })
 export class AppRoot {
+  private isHomeOrAboutPage = false;
   private isNotCurtainsPage = false;
   private curtainsToNotCurtainsPage = false;
-  // private curtainsToCurtainsPage = false;
   private previousUrl: string;
 
   constructor(private router: Router) {
@@ -19,11 +19,12 @@ export class AppRoot {
 
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
+        const isGoingToHomeOrAboutPage = event.url === '/' || event.url === '/about';
         const isGoingToCurtainsPage = CURTAINS_PAGES.some(page => page === event.url);
         const isFromCurtainsPage = CURTAINS_PAGES.some(page => page === AppRootRef.previousUrl);
 
+        AppRootRef.isHomeOrAboutPage = isGoingToHomeOrAboutPage;
         AppRootRef.curtainsToNotCurtainsPage = !isGoingToCurtainsPage && isFromCurtainsPage;
-        // AppRootRef.curtainsToCurtainsPage = isGoingToCurtainsPage && isFromCurtainsPage;
         AppRootRef.isNotCurtainsPage = !isGoingToCurtainsPage;
         AppRootRef.previousUrl = event.url;
       }
@@ -31,7 +32,7 @@ export class AppRoot {
   }
 
   getRootClass() {
-    return this.isNotCurtainsPage ? 'small-bg' : '';
+    return this.isHomeOrAboutPage ? 'small-bg' : '';
   }
 
   getAppClass() {

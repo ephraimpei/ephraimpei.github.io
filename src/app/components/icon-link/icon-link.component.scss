@@ -27,6 +27,8 @@
   .icon-link
   {
     margin: 20px 0;
+    width: 50%;
+    float: left;
 
     img
     {
@@ -40,6 +42,12 @@
           width: 65px;
         }
       }
+    }
+
+    @include respond-above(table)
+    {
+      width: auto;
+      float: none;
     }
   }
 }

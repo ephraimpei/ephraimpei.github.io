@@ -66,3 +66,10 @@
     @content;
   }
 }
+
+@mixin clear-fix()
+{
+  content: "";
+  display: table;
+  clear: both;
+}
