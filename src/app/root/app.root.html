@@ -1,4 +1,8 @@
-<div id="root" [class]="getClass()">
+<div id="root" [class]="getRootClass()">
   <app-nav-bar></app-nav-bar>
-  <router-outlet></router-outlet>
+  <div [class]="getAppClass()">
+    <aside class="left-curtain"></aside>
+    <aside class="right-curtain"></aside>
+    <router-outlet></router-outlet>
+  </div>
 </div>

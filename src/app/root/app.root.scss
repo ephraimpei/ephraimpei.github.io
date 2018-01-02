@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'mixins';
+@import 'animations';
 
 #root
 {
@@ -15,6 +16,60 @@
   &.small-bg
   {
     background-size: 65%;
+  }
+
+  .app-base-layer
+  {
+    height: 100%;
+    position: relative;
+
+    .left-curtain,
+    .right-curtain
+    {
+      height: 100%;
+      position: absolute;
+      // transition: width $background-img-trans-time linear;
+    }
+
+    .left-curtain
+    {
+      left: 0;
+    }
+
+    .right-curtain
+    {
+      right: 0;
+    }
+
+    &.curtains-active
+    {
+      .left-curtain
+      {
+        border-right: 2px solid $black;
+        width: 17.5%;
+        animation: show-curtains $background-img-trans-time linear;
+      }
+
+      .right-curtain
+      {
+        border-left: 2px solid $black;
+        width: 17.5%;
+        animation: show-curtains $background-img-trans-time linear;
+      }
+    }
+
+    &.curtains-inactive
+    {
+      .left-curtain
+      {
+        animation: hide-left-curtains $background-img-trans-time linear;
+      }
+
+      .right-curtain
+      {
+        animation: hide-right-curtains $background-img-trans-time linear;
+      }
+    }
   }
 
   @media only screen and (max-height: $max-height-bg) {

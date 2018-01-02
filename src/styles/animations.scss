@@ -1,37 +1,36 @@
 @import 'mixins';
 
-@keyframes expand-100
-{
+@keyframes show-curtains {
   0%
   {
-    width: 0%;
+    width: 50%;
   }
   100%
   {
-    width: 100%;
+    width: 17.5%;
   }
 }
 
-@keyframes expand-80
-{
+@keyframes hide-right-curtains {
   0%
   {
-    width: 0%;
+    border-left: 2px solid $black;
+    width: 17.5%;
   }
   100%
   {
-    width: 80%;
+    width: 50%;
   }
 }
 
-@keyframes expand-65
-{
+@keyframes hide-left-curtains {
   0%
   {
-    width: 0%;
+    border-right: 2px solid $black;
+    width: 17.5%;
   }
   100%
   {
-    width: 65%;
+    width: 50%;
   }
 }

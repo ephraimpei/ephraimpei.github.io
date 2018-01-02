@@ -2,14 +2,19 @@ import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-content-space',
-  // templateUrl: './content-space.component.html',
   template: `
-    <div class='content-space-wrapper'>
-      <section class='content-space'>
-        <ng-content></ng-content>
-      </section>
-    </div>
+    <section class='content-space'>
+      <ng-content></ng-content>
+    </section>
   `,
-  styleUrls: ['./content-space.component.scss']
+  styles: [
+    `
+      .content-space
+      {
+        width: 100%;
+        height: 100%;
+      }
+    `
+  ]
 })
 export class ContentSpace { }
