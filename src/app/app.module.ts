@@ -13,9 +13,10 @@ import {
 } from './layouts';
 import {
   HomePage,
+  ThoughtsPage,
+  ProjectsPage,
   ResumePage,
   AboutPage,
-  ProjectsPage
 } from './pages';
 import { NotFoundPage } from './pages/not-found/not-found.page';
 import { appRoutes } from './routes';
@@ -26,9 +27,10 @@ import { appRoutes } from './routes';
     AppRoot,
     // Pages
     HomePage,
+    ProjectsPage,
+    ThoughtsPage,
     ResumePage,
     AboutPage,
-    ProjectsPage,
     NotFoundPage,
     // Layouts
     NavBarLayout,
