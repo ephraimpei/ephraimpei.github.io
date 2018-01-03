@@ -1,0 +1,8 @@
+{
+  "title": "Pomodoro To-Do List",
+  "image": "TBD...",
+  "live-link": "http://pomodoro-to-do.herokuapp.com/",
+  "github-link": "https://github.com/ephraimpei/pomodoro-to-do-app",
+  "technologies": "['python', 'djange', 'javascript', 'react', 'mongo']",
+  "description": "A simple to do app with pomodoro productivity features."
+}

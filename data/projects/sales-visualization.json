@@ -1,0 +1,8 @@
+{
+  "title": "Sales Data Visualization",
+  "image": "TBD...",
+  "live-link": "http://sales-data-visualization.herokuapp.com/",
+  "github-link": "https://github.com/ephraimpei/sales-data-visualization",
+  "technologies": "['javascript', 'd3']",
+  "description": "A fun treemap data visualization example using D3."
+}

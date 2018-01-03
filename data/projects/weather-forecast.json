@@ -1,0 +1,8 @@
+{
+  "title": "Weather Forecast",
+  "image": "TBD...",
+  "live-link": "https://ephraimpei-weather-forecast.herokuapp.com/",
+  "github-link": "https://github.com/ephraimpei/weather-forecast",
+  "technologies": "['javascript', 'react', 'd3']",
+  "description": "Responsive single page weather forecast app."
+}
