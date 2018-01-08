@@ -1,8 +1,0 @@
-{
-  "title": "VICE Video Embedded Web Player",
-  "image": "TBD...",
-  "live-link": "https://video.vice.com/en_us/embed/5966713ea2ab3dfe1f4296da",
-  "github-link": "[private repo]",
-  "technologies": "['typescript', 'react', 'redux']",
-  "description": "A distributable script hosted on AWS S3 that loads the VICE Video embedded web player."
-}

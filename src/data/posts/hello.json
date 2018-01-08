@@ -1,0 +1,9 @@
+{
+  "id": "2",
+  "title": "My Personal Website",
+  "image": "TBD...",
+  "live-link": "https://www.ephraimpei.com/",
+  "github-link": "https://github.com/ephraimpei/ephraimpei.github.io",
+  "technologies": "['angular5', 'typescript', 'SASS']",
+  "description": "Static site hosted on AWS, propagated through CloudFlare."
+}

@@ -1,8 +1,0 @@
-{
-  "title": "VICE Video Site",
-  "image": "TBD...",
-  "live-link": "https://video.vice.com",
-  "github-link": "[private repo]",
-  "technologies": "['typescript', 'react', 'redux', 'Node.js']",
-  "description": "The only place to watch VICE Video content!"
-}

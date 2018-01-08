@@ -1,8 +1,0 @@
-{
-  "title": "Nom noms (a Yelp clone)",
-  "image": "TBD...",
-  "live-link": "https://nom-noms.herokuapp.com/",
-  "github-link": "https://github.com/ephraimpei/nom-noms",
-  "technologies": "['ruby', 'ruby-on-rails', 'javascript', 'react', 's3', 'postgresql', 'sql']",
-  "description": "A social-themed location search and review platform based on Yelp."
-}
