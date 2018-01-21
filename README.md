@@ -1,20 +1,20 @@
 # Ephraim Pei's Personal Site
 
-This personal site is an entirely static site (no backend) that was built with some of today's hottest and latest Front End technologies.
+This personal site is an entirely static site (no backend) that was built with some of today's lastest and greatest Front End technologies.
 
 ## Features
 ```
 - Angular5 components and routing
 - Mobile first responsive SASS
-- Cool CSS3 animations
-- Automated JSON serialization for content
+- CSS3 animations
 - AWS S3 Hosting
 - Cloudflare CDN propagation
 ```
 
 ## Technologies
 ```
-- Angular CLI (bootstraps the following technologies):
+- [Angular CLI](https://github.com/angular/angular-cli)
+(bootstraps the following technologies):
   -- Angular5
   -- Typescript
   -- SASS
