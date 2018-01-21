@@ -22,7 +22,6 @@ import {
 // Pages
 import {
   HomePage,
-  ThoughtsPage,
   ProjectsPage,
   ResumePage,
   AboutPage,
@@ -42,7 +41,6 @@ import { appRoutes } from './routes';
     AppRoot,
     HomePage,
     ProjectsPage,
-    ThoughtsPage,
     ResumePage,
     AboutPage,
     NotFoundPage,

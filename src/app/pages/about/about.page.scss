@@ -10,4 +10,14 @@
   {
     top: 25px;
   }
+
+  summary
+  {
+    overflow: scroll;
+
+    @media only screen and (max-height: $max-height-bg)
+    {
+      max-height: 250px;
+    }
+  }
 }

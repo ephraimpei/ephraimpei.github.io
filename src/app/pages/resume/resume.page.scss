@@ -38,6 +38,10 @@
       max-height: 87.5%;
       max-width: 65%;
     }
+
+    @media only screen and (max-height: $max-height-bg) {
+      max-height: 250px;
+    }
   }
 
   .iframe-embed-container
