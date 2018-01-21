@@ -3,16 +3,13 @@
 This personal site is an entirely static site (no backend) that was built with some of today's lastest and greatest Front End technologies.
 
 ## Features
-```
 - Angular5 components and routing
 - Mobile first responsive SASS
 - CSS3 animations
 - AWS S3 Hosting
 - Cloudflare CDN propagation
-```
 
 ## Technologies
-```
 - [Angular CLI](https://github.com/angular/angular-cli)
 (bootstraps the following technologies):
   -- Angular5
@@ -22,7 +19,6 @@ This personal site is an entirely static site (no backend) that was built with s
   -- Webpack
 - AWS CLI
 - Cloudflare
-```
 
 ## Development server
 
