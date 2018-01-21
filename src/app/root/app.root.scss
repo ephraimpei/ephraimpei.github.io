@@ -21,7 +21,7 @@
 
   .app-base-layer
   {
-    height: calc(100% - 40px);
+    height: calc(100% - 65px);
     position: relative;
     margin-top: -9px;
 
@@ -91,9 +91,9 @@
       }
     }
 
-    @include respond-above(desktop)
+    @include respond-above(tablet)
     {
-      height: calc(100% - 60px);
+      height: calc(100% - 40px);
     }
   }
 
