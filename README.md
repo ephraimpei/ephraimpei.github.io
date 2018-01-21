@@ -12,11 +12,11 @@ This personal site is an entirely static site (no backend) that was built with s
 ## Technologies
 - [Angular CLI](https://github.com/angular/angular-cli)
 (bootstraps the following technologies):
-  -- Angular5
-  -- Typescript
-  -- SASS
-  -- Karma
-  -- Webpack
+  1. Angular5
+  2. Typescript
+  3. SASS
+  4. Karma
+  5. Webpack
 - AWS CLI
 - Cloudflare
 
