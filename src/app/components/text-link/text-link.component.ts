@@ -7,15 +7,14 @@ import { Component, Input } from '@angular/core';
       class='text-link'
       routerLink="{{href}}"
       routerLinkActive="active"
-      [routerLinkActiveOptions]="{exact: true}"
-      *ngIf="exactMatch; else noExactMatch">
-        {{text}}
+      [routerLinkActiveOptions]="{exact: exactMatch}"
+      *ngIf="type === 'internal'; else external">
+      {{text}}
     </a>
-    <ng-template #noExactMatch>
+    <ng-template #external>
       <a
         class='text-link'
-        routerLink="{{href}}"
-        routerLinkActive="active">
+        href="{{href}}">
         {{text}}
       </a>
     </ng-template>
@@ -24,12 +23,15 @@ import { Component, Input } from '@angular/core';
 export class TextLink {
 
   @Input()
-  text: string;
+  text = '';
 
   @Input()
-  href: string;
+  href = '/#';
 
   @Input()
-  exactMatch: boolean;
+  exactMatch = false;
+
+  @Input()
+  type: 'internal' | 'external' = 'internal';
 
 }

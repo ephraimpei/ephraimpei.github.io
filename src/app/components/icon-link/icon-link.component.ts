@@ -4,19 +4,27 @@ import { Component, Input } from '@angular/core';
   selector: 'app-icon-link',
   template: `
     <div class='icon-link'>
-      <a href={{href}}>
+      <a routerLink="{{href}}" *ngIf="type === 'internal'; else external">
         <img src={{src}} />
       </a>
     </div>
+    <ng-template #external>
+      <a href="{{href}}">
+        <img src={{src}} />
+      </a>
+    </ng-template>
   `,
   styleUrls: ['./icon-link.component.scss']
 })
 export class IconLink {
 
   @Input()
-  src: string;
+  src = '';
 
   @Input()
-  href: string;
+  href = '/#';
+
+  @Input()
+  type: 'internal' | 'external' = 'internal';
 
 }
