@@ -10,7 +10,9 @@ import {
   IconLink,
   ContentSpace,
   ProjectItem,
-  ProjectList
+  ProjectList,
+  ResponsiveLink,
+  TextLink
 } from './components';
 
 // Layouts
@@ -49,7 +51,9 @@ import { appRoutes } from './routes';
     IconLink,
     ContentSpace,
     ProjectItem,
-    ProjectList
+    ProjectList,
+    ResponsiveLink,
+    TextLink
   ],
   imports: [
     BrowserModule,

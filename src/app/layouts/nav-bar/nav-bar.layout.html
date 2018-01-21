@@ -1,8 +1,22 @@
 <div class="shadow-mask">
     <nav class="header-nav">
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        <a routerLink="/projects" routerLinkActive="active">Projects</a>
-        <a routerLink="/resume" routerLinkActive="active">Resume</a>
-        <a routerLink="/about" routerLinkActive="active">About</a>
+        <section class="links-tray">
+            <app-responsive-link>
+                    <app-text-link href="/" text="Home" exactMatch="true"></app-text-link>
+                    <app-icon-link href="/" src="assets/svg/home.svg"></app-icon-link>
+                </app-responsive-link>
+                <app-responsive-link>
+                    <app-text-link href="/projects" text="Projects"></app-text-link>
+                    <app-icon-link href="/projects" src="assets/svg/portfolio.svg"></app-icon-link>
+                </app-responsive-link>
+                <app-responsive-link>
+                    <app-text-link href="/resume" text="Resume"></app-text-link>
+                    <app-icon-link href="/resume" src="assets/svg/resume.svg"></app-icon-link>
+                </app-responsive-link>
+                <app-responsive-link>
+                    <app-text-link href="/about" text="About"></app-text-link>
+                    <app-icon-link href="/about" src="assets/svg/info.svg"></app-icon-link>
+                </app-responsive-link>
+        </section>
     </nav>
 </div>

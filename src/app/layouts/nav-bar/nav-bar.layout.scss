@@ -10,38 +10,44 @@
 
 .header-nav
 {
-  display: flex;
   box-shadow: $drop-shadow;
   padding: 10px 0%;
   background: $white;
+  width: 100%;
 
-  a
+  .links-tray
   {
-    width: 25%;
-    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: auto;
 
-    &.active
+    @include respond-above(tablet)
     {
-      font-weight: $bold;
-      cursor: default;
+      width: 60%;
     }
+  }
+}
 
-    @include respond-above(desktop)
-    {
-      transition: transform $background-img-trans-time ease-in-out;
+:host ::ng-deep .text-link
+{
+  width: 25%;
+  text-align: center;
 
-      &:hover:not(.active)
-      {
-        font-weight: $bold;
-        transform: scale(1.2);
-      }
-    }
+  &.active
+  {
+    font-weight: $bold;
+    cursor: default;
   }
 
   @include respond-above(desktop)
   {
-    width: 60%;
-    margin: 0 auto;
-    padding: 20px 20%;
+    transition: transform $background-img-trans-time ease-in-out;
+
+    &:hover:not(.active)
+    {
+      font-weight: $bold;
+      transform: scale(1.2);
+    }
   }
 }

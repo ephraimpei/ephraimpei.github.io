@@ -1,0 +1,21 @@
+@import 'mixins';
+
+:host ::ng-deep .icon-link
+{
+  display: inline-block;
+  
+  @include respond-above(tablet)
+  {
+    display: none;
+  }
+}
+
+:host ::ng-deep .text-link
+{
+  display: none;
+  
+  @include respond-above(tablet)
+  {
+    display: inline-block;
+  }
+}
