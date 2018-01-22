@@ -1,0 +1,11 @@
+dist: trusty
+language: node_js
+install:
+- npm install
+node_js:
+- 'node'
+script:
+- npm run build
+cache:
+  directories:
+  - node_modules
