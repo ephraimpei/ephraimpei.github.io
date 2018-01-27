@@ -13,6 +13,7 @@
   background-color: $light-grey;
   transition: background-size $background-img-trans-time ease-in-out;
   z-index: $z-index-0;
+  overflow: hidden;
 
   &.small-bg
   {

@@ -1,4 +1,11 @@
 .projects-page
 {
   height: 100%;
+  padding-top: 10px;
+  overflow: scroll;
+
+  &::ng-deep .project-list
+  {
+    max-height: 100%;
+  }
 }

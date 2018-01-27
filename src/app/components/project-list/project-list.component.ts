@@ -8,7 +8,7 @@ import { ProjectService } from '../../services/project/project.service';
   template: `
     <ul class="project-list">
       <li *ngFor="let project of projects">
-        {{project.title}}
+        <app-project-item [project]=project></app-project-item>
       </li>
     </ul>
   `,
