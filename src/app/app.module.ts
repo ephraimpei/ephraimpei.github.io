@@ -12,13 +12,15 @@ import {
   ProjectItem,
   ProjectList,
   ResponsiveLink,
-  TextLink
+  TextLink,
+  TechnologyIcon,
 } from './components';
 
 // Layouts
 import {
   NavBarLayout,
-  SocialIconsTray
+  SocialIconsTray,
+  TechnologiesTray,
 } from './layouts';
 
 // Pages
@@ -27,7 +29,7 @@ import {
   ProjectsPage,
   ResumePage,
   AboutPage,
-  NotFoundPage
+  NotFoundPage,
 } from './pages';
 
 // Services
@@ -48,12 +50,14 @@ import { appRoutes } from './routes';
     NotFoundPage,
     NavBarLayout,
     SocialIconsTray,
+    TechnologiesTray,
     IconLink,
     ContentSpace,
     ProjectItem,
     ProjectList,
     ResponsiveLink,
-    TextLink
+    TextLink,
+    TechnologyIcon,
   ],
   imports: [
     BrowserModule,

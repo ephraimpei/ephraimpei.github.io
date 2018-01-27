@@ -4,3 +4,4 @@ export { ProjectItem } from './project-item/project-item.component';
 export { ProjectList } from './project-list/project-list.component';
 export { ResponsiveLink } from './responsive-link/responsive-link.component';
 export { TextLink } from './text-link/text-link.component';
+export { TechnologyIcon } from './technology-icon/technology-icon.component';

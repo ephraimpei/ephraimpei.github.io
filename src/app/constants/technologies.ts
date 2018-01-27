@@ -15,12 +15,30 @@ export enum TECHNOLOGIES {
   SASS = 'sass',
   D3 = 'd3',
   REDUX = 'redux',
-  NODE = 'node'
+  NODE = 'node',
+  CSS3 = 'css3',
+  HTML5 = 'html5',
+  STYLUS = 'stylus',
 }
 
-// "['ruby', 'ruby-on-rails', 'javascript', 'react', 's3', 'postgresql', 'sql']",
-// "['python', 'django', 'javascript', 'react', 'mongo']"
-// ['javascript', 'd3']
-// ['typescript', 'react', 'redux']
-// ['typescript', 'react', 'redux', 'node']
-// ['javascript', 'react', 'd3']
+export const TECHNOLOGIES_SRC_MAPPING: { [key: string]: string } = {
+  [`${TECHNOLOGIES.RUBY}`]: 'assets/svg/ruby.svg',
+  [`${TECHNOLOGIES.RUBY_ON_RAILS}`]: 'assets/svg/ruby-on-rails.svg',
+  [`${TECHNOLOGIES.JAVASCRIPT}`]: 'assets/svg/javascript.svg',
+  [`${TECHNOLOGIES.AWS_S3}`]: 'assets/svg/aws-s3.svg',
+  [`${TECHNOLOGIES.POSTGRESQL}`]: 'assets/svg/postgresql.svg',
+  [`${TECHNOLOGIES.SQL}`]: 'assets/svg/sql.svg',
+  [`${TECHNOLOGIES.PYTHON}`]: 'assets/svg/python.svg',
+  [`${TECHNOLOGIES.DJANGO}`]: 'assets/svg/django.svg',
+  [`${TECHNOLOGIES.MONGO}`]: 'assets/svg/mongo.svg',
+  [`${TECHNOLOGIES.CLOUDFLARE}`]: 'assets/svg/cloudflare.svg',
+  [`${TECHNOLOGIES.ANGULAR}`]: 'assets/svg/angular.svg',
+  [`${TECHNOLOGIES.TYPESCRIPT}`]: 'assets/svg/typescript.svg',
+  [`${TECHNOLOGIES.SASS}`]: 'assets/svg/sass.svg',
+  [`${TECHNOLOGIES.D3}`]: 'assets/svg/d3.svg',
+  [`${TECHNOLOGIES.REDUX}`]: 'assets/svg/redux.svg',
+  [`${TECHNOLOGIES.NODE}`]: 'assets/svg/node.svg',
+  [`${TECHNOLOGIES.CSS3}`]: 'assets/svg/css3.svg',
+  [`${TECHNOLOGIES.HTML5}`]: 'assets/svg/html5.svg',
+  [`${TECHNOLOGIES.STYLUS}`]: 'assets/svg/stylus.svg',
+};

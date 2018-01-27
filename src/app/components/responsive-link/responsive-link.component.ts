@@ -9,8 +9,4 @@ import { Component } from '@angular/core';
   `,
   styleUrls: ['./responsive-link.component.scss']
 })
-export class ResponsiveLink {
-
-  constructor() { }
-
-}
+export class ResponsiveLink { }
