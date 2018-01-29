@@ -1,7 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { TechnologiesTray } from './technologies-tray.layout';
-import { IconLink } from '../../components';
+import { TechnologyIcon, IconLink } from '../../components';
 
 describe('TechnologiesTray', () => {
   let component: TechnologiesTray;
@@ -10,8 +11,11 @@ describe('TechnologiesTray', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        TechnologiesTray
-      ]
+        TechnologiesTray,
+        TechnologyIcon,
+        IconLink,
+      ],
+      imports: [ RouterTestingModule ]
     })
     .compileComponents();
   }));

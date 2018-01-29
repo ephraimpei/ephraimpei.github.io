@@ -2,7 +2,8 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
 import { ProjectsPage } from './projects.page';
-import { ProjectList, ProjectItem } from '../../components';
+import { ProjectList, ProjectItem, TechnologyIcon, IconLink } from '../../components';
+import { TechnologiesTray } from '../../layouts';
 import { ProjectService } from '../../services';
 
 describe('ProjectsPage', () => {
@@ -14,7 +15,10 @@ describe('ProjectsPage', () => {
       declarations: [
         ProjectsPage,
         ProjectList,
-        ProjectItem
+        ProjectItem,
+        TechnologyIcon,
+        IconLink,
+        TechnologiesTray,
       ],
       imports: [ RouterTestingModule ],
       providers: [ ProjectService ]
