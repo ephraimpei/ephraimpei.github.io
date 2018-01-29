@@ -9,7 +9,8 @@
       "outDir": "dist",
       "assets": [
         "assets/svg",
-        "assets/favicons"
+        "assets/favicons",
+        "assets/png"
       ],
       "index": "index.html",
       "main": "main.ts",

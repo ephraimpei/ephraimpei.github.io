@@ -15,6 +15,39 @@
   {
     overflow: scroll;
 
+    .short-version
+    {
+      display: flex;
+      flex-flow: column;
+
+      &--text
+      {
+        margin-bottom: 15px;
+
+        @include respond-above(tablet)
+        {
+          margin-bottom: 0;
+        }
+      }
+      &--img
+      {
+        img
+        {
+          box-sizing: border-box;
+          border: $dark-grey 1px solid;
+          padding: .25em;
+          background-color: $white;
+          width: 150px;
+        }
+      }
+
+      @include respond-above(tablet)
+      {
+        justify-content: space-between;
+        flex-flow: row;
+      }
+    }
+
     @media only screen and (max-height: $max-height-bg)
     {
       max-height: 250px;
