@@ -1,21 +1,23 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AboutPage } from './about.page';
-import { ContentSpace } from '../../components';
+import { TechnologiesTray } from './technologies-tray.layout';
+import { IconLink } from '../../components';
 
-describe('AboutPage', () => {
-  let component: AboutPage;
-  let fixture: ComponentFixture<AboutPage>;
+describe('TechnologiesTray', () => {
+  let component: TechnologiesTray;
+  let fixture: ComponentFixture<TechnologiesTray>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AboutPage, ContentSpace ]
+      declarations: [
+        TechnologiesTray
+      ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AboutPage);
+    fixture = TestBed.createComponent(TechnologiesTray);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

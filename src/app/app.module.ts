@@ -35,7 +35,7 @@ import {
 // Services
 import {
   ProjectService
-} from './services/project/project.service';
+} from './services';
 
 // Routes
 import { appRoutes } from './routes';

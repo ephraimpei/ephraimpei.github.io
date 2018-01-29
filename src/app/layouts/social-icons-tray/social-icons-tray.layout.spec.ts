@@ -1,18 +1,19 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
-import { HomePage } from './home.page';
-import { SocialIconsTray } from '../../layouts';
-import { IconLink } from '../../components';
+import { RouterModule } from '@angular/router';
 
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
+import { SocialIconsTray } from './social-icons-tray.layout';
+import { IconLink } from '../../components';
+import { appRoutes } from '../../routes';
+
+describe('SocialIconsTray', () => {
+  let component: SocialIconsTray;
+  let fixture: ComponentFixture<SocialIconsTray>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        HomePage,
         SocialIconsTray,
         IconLink
       ],
@@ -22,7 +23,7 @@ describe('HomePage', () => {
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HomePage);
+    fixture = TestBed.createComponent(SocialIconsTray);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

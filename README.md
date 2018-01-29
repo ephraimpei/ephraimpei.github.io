@@ -1,5 +1,7 @@
 # Ephraim Pei's Personal Site
 
+[![Build Status](https://travis-ci.org/ephraimpei/ephraimpei.github.io.svg?branch=master)](https://travis-ci.org/ephraimpei/ephraimpei.github.io)
+
 This personal site is an entirely static site (no backend) that was built with some of today's lastest and greatest Front End technologies.
 
 ## Features
