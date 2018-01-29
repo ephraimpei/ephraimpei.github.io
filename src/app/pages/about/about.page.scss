@@ -13,7 +13,7 @@
 
   summary
   {
-    overflow: scroll;
+    @include apply-cross-browser-y-scrolling();
 
     .short-version
     {

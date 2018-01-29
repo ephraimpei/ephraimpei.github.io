@@ -81,3 +81,11 @@
   padding: .25em;
   background-color: $white;
 }
+
+@mixin apply-cross-browser-y-scrolling()
+{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: scrollbar;
+}

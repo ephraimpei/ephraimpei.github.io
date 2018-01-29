@@ -2,12 +2,12 @@
 
 .technologies-tray
 {
-  margin: 30px auto;
+  margin: 20px auto;
   width: 80%;
 
   &::ng-deep .icon-link
   {
-    margin: 0 10px;
+    margin: 10px;
   }
 
   @include respond-above(tablet)
