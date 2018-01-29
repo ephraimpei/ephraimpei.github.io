@@ -4,7 +4,7 @@ import { TECHNOLOGIES } from '../app/constants/technologies';
 const {
   RUBY, RUBY_ON_RAILS, JAVASCRIPT, REACT, MONGO, CLOUDFLARE, SASS,
   AWS_S3, POSTGRESQL, SQL, PYTHON, DJANGO, ANGULAR, TYPESCRIPT, D3,
-  REDUX, NODE, TRAVIS, WEBPACK
+  REDUX, NODE, TRAVIS, WEBPACK, BROWSERIFY
 } = TECHNOLOGIES;
 
 export const PROJECTS: Project[] = [
@@ -68,7 +68,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'http://sales-data-visualization.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/sales-data-visualization',
-    technologies: [JAVASCRIPT, D3],
+    technologies: [JAVASCRIPT, D3, BROWSERIFY],
     description: 'A fun treemap data visualization example using D3.'
   },
 ];
