@@ -20,8 +20,6 @@
   .content-space
   {
     width: 80%;
-    background: $white;
-    border: 2px solid $medium-grey;
 
     @include respond-to(tablet)
     {

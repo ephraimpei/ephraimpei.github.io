@@ -3,6 +3,8 @@ import { Router, NavigationEnd } from '@angular/router';
 
 const CURTAINS_PAGES = ['/thoughts', '/projects'];
 
+type Page = 'home' | 'about' | 'projects' | 'resume';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.root.html',
@@ -13,17 +15,17 @@ export class AppRoot {
   private isNotCurtainsPage = false;
   private curtainsToNotCurtainsPage = false;
   private previousUrl: string;
+  private currentPage: Page;
 
   constructor(private router: Router) {
     const AppRootRef = this;
 
     router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        const isGoingToHomeOrAboutPage = event.url === '/' || event.url === '/about';
         const isGoingToCurtainsPage = CURTAINS_PAGES.some(page => page === event.url);
         const isFromCurtainsPage = CURTAINS_PAGES.some(page => page === AppRootRef.previousUrl);
 
-        AppRootRef.isHomeOrAboutPage = isGoingToHomeOrAboutPage;
+        AppRootRef.currentPage = event.url === '/' ? 'home' : event.url.slice(1) as Page;
         AppRootRef.curtainsToNotCurtainsPage = !isGoingToCurtainsPage && isFromCurtainsPage;
         AppRootRef.isNotCurtainsPage = !isGoingToCurtainsPage;
         AppRootRef.previousUrl = event.url;
@@ -32,7 +34,11 @@ export class AppRoot {
   }
 
   getRootClass() {
-    return this.isHomeOrAboutPage ? 'small-bg' : '';
+    switch (this.currentPage) {
+      case 'home': return 'small-bg';
+      case 'about': return 'x-small-bg';
+      default: return '';
+    }
   }
 
   getAppClass() {

@@ -30,7 +30,7 @@ export const PROJECTS: Project[] = [
     id: 3,
     title: 'My Personal Website',
     image: 'TBD...',
-    'live-link': 'https://www.ephraimpei.com/',
+    'live-link': 'http://ephraimpei.com.s3-website-us-east-1.amazonaws.com/',
     'github-link': 'https://github.com/ephraimpei/ephraimpei.github.io',
     technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE, TRAVIS, WEBPACK],
     description: 'Static site hosted on AWS, propagated through CloudFlare.'

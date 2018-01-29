@@ -20,6 +20,11 @@
     background-size: 65%;
   }
 
+  &.x-small-bg
+  {
+    background-size: 33%;
+  }
+
   .app-base-layer
   {
     height: calc(100% - 65px);
