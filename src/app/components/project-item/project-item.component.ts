@@ -5,6 +5,7 @@ import { Project } from '../../interfaces/project';
   selector: 'app-project-item',
   template: `
     <div class="project-item">
+      <hr>
       <h3>{{project.title}}</h3>
       <p>{{project.description}}</p>
       <app-technologies-tray [technologies]="project['technologies']"></app-technologies-tray>

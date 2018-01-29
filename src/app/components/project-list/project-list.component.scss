@@ -1,0 +1,13 @@
+.project-list
+{
+  li:first-child
+  {
+    &::ng-deep .project-item
+    {
+      hr
+      {
+        display: none;
+      }
+    }
+  }
+}
