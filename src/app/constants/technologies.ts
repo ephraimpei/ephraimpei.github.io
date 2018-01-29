@@ -20,6 +20,8 @@ export enum TECHNOLOGIES {
   HTML5 = 'html5',
   STYLUS = 'stylus',
   TRAVIS = 'travis-ci',
+  WEBPACK = 'webpack',
+  BROWSERIFY = 'browserify',
 }
 
 export const TECHNOLOGY_METADATA: {
@@ -111,5 +113,13 @@ export const TECHNOLOGY_METADATA: {
   [`${TECHNOLOGIES.TRAVIS}`]: {
     svg: 'assets/svg/travis-ci.svg',
     href: 'https://travis-ci.com/',
+  },
+  [`${TECHNOLOGIES.WEBPACK}`]: {
+    svg: 'assets/svg/webpack.svg',
+    href: 'https://webpack.js.org/',
+  },
+  [`${TECHNOLOGIES.BROWSERIFY}`]: {
+    svg: 'assets/svg/browserify.svg',
+    href: 'http://browserify.org/',
   },
 };

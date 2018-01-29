@@ -4,7 +4,7 @@ import { TECHNOLOGIES } from '../app/constants/technologies';
 const {
   RUBY, RUBY_ON_RAILS, JAVASCRIPT, REACT, MONGO, CLOUDFLARE, SASS,
   AWS_S3, POSTGRESQL, SQL, PYTHON, DJANGO, ANGULAR, TYPESCRIPT, D3,
-  REDUX, NODE, TRAVIS
+  REDUX, NODE, TRAVIS, WEBPACK
 } = TECHNOLOGIES;
 
 export const PROJECTS: Project[] = [
@@ -14,7 +14,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://video.vice.com/en_us/embed/5966713ea2ab3dfe1f4296da',
     'github-link': null,
-    technologies: [TYPESCRIPT, REACT, REDUX, TRAVIS],
+    technologies: [TYPESCRIPT, REACT, REDUX, TRAVIS, WEBPACK],
     description: 'A distributable script hosted on AWS S3 that loads the VICE Video embedded web player.'
   },
   {
@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://video.vice.com',
     'github-link': null,
-    technologies: [TYPESCRIPT, REACT, REDUX, NODE, TRAVIS],
+    technologies: [TYPESCRIPT, REACT, REDUX, NODE, TRAVIS, WEBPACK],
     description: 'The only place to watch VICE Video content!'
   },
   {
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://www.ephraimpei.com/',
     'github-link': 'https://github.com/ephraimpei/ephraimpei.github.io',
-    technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE, TRAVIS],
+    technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE, TRAVIS, WEBPACK],
     description: 'Static site hosted on AWS, propagated through CloudFlare.'
   },
   {
@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://ephraimpei-weather-forecast.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/weather-forecast',
-    technologies: [JAVASCRIPT, REACT, D3],
+    technologies: [JAVASCRIPT, REACT, D3, WEBPACK],
     description: 'Responsive single page weather forecast app.'
   },
   {
@@ -59,7 +59,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'http://pomodoro-to-do.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/pomodoro-to-do-app',
-    technologies: [PYTHON, DJANGO, JAVASCRIPT, REACT, MONGO],
+    technologies: [PYTHON, DJANGO, JAVASCRIPT, REACT, MONGO, WEBPACK],
     description: 'A simple to do app with pomodoro productivity features.'
   },
   {
