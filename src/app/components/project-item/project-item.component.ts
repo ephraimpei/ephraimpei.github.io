@@ -14,6 +14,9 @@ import { Project } from '../../interfaces/project';
         <h4><a href="{{project['github-link']}}">Github Repo</a></h4>
       </div>
       <ng-template #privateGithub><p>[Private Repository]</p></ng-template>
+      <div class="lede">
+        <img [src]="getLedeSrc()"/>
+      </div>
     </div>
   `,
   styleUrls: ['./project-item.component.scss']
@@ -22,5 +25,9 @@ export class ProjectItem {
 
   @Input()
   project: Project;
+
+  getLedeSrc() {
+    return `assets/png/${this.project.image}`;
+  }
 
 }

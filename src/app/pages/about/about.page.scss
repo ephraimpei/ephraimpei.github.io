@@ -33,10 +33,7 @@
       {
         img
         {
-          box-sizing: border-box;
-          border: $dark-grey 1px solid;
-          padding: .25em;
-          background-color: $white;
+          @include apply-border-box();
           width: 150px;
         }
       }

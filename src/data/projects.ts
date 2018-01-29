@@ -11,7 +11,7 @@ export const PROJECTS: Project[] = [
   {
     id: 1,
     title: 'VICE Video Embedded Web Player',
-    image: 'TBD...',
+    image: 'vice-embedded-player.png',
     'live-link': 'https://video.vice.com/en_us/embed/5966713ea2ab3dfe1f4296da',
     'github-link': null,
     technologies: [TYPESCRIPT, REACT, REDUX, TRAVIS, WEBPACK],
@@ -20,7 +20,7 @@ export const PROJECTS: Project[] = [
   {
     id: 2,
     title: 'VICE Video Site',
-    image: 'TBD...',
+    image: 'vice-video.png',
     'live-link': 'https://video.vice.com',
     'github-link': null,
     technologies: [TYPESCRIPT, REACT, REDUX, NODE, TRAVIS, WEBPACK],
@@ -29,7 +29,7 @@ export const PROJECTS: Project[] = [
   {
     id: 3,
     title: 'My Personal Website',
-    image: 'TBD...',
+    image: 'personal-site.png',
     'live-link': 'http://ephraimpei.com.s3-website-us-east-1.amazonaws.com/',
     'github-link': 'https://github.com/ephraimpei/ephraimpei.github.io',
     technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE, TRAVIS, WEBPACK],
@@ -38,7 +38,7 @@ export const PROJECTS: Project[] = [
   {
     id: 4,
     title: 'Nom noms (a Yelp clone)',
-    image: 'TBD...',
+    image: 'nom-noms.png',
     'live-link': 'https://nom-noms.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/nom-noms',
     technologies: [RUBY, RUBY_ON_RAILS, JAVASCRIPT, REACT, AWS_S3, POSTGRESQL, SQL],
@@ -47,7 +47,7 @@ export const PROJECTS: Project[] = [
   {
     id: 5,
     title: 'Weather Forecast',
-    image: 'TBD...',
+    image: 'weather-forecast.png',
     'live-link': 'https://ephraimpei-weather-forecast.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/weather-forecast',
     technologies: [JAVASCRIPT, REACT, D3, WEBPACK],
@@ -56,7 +56,7 @@ export const PROJECTS: Project[] = [
   {
     id: 6,
     title: 'Pomodoro To-Do List',
-    image: 'TBD...',
+    image: 'pomodoro-to-do.png',
     'live-link': 'http://pomodoro-to-do.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/pomodoro-to-do-app',
     technologies: [PYTHON, DJANGO, JAVASCRIPT, REACT, MONGO, WEBPACK],
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
   {
     id: 7,
     title: 'Sales Data Visualization',
-    image: 'TBD...',
+    image: 'sales-data-viz.png',
     'live-link': 'http://sales-data-visualization.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/sales-data-visualization',
     technologies: [JAVASCRIPT, D3, BROWSERIFY],

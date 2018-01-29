@@ -73,3 +73,11 @@
   display: table;
   clear: both;
 }
+
+@mixin apply-border-box()
+{
+  box-sizing: border-box;
+  border: $dark-grey solid 1px;
+  padding: .25em;
+  background-color: $white;
+}
