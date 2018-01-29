@@ -15,7 +15,9 @@ import { Project } from '../../interfaces/project';
       </div>
       <ng-template #privateGithub><p>[Private Repository]</p></ng-template>
       <div class="lede">
-        <img [src]="getLedeSrc()"/>
+        <a [href]="getSiteLink()">
+          <img [src]="getLedeSrc()"/>
+        </a>
       </div>
     </div>
   `,
@@ -28,6 +30,10 @@ export class ProjectItem {
 
   getLedeSrc() {
     return `assets/png/${this.project.image}`;
+  }
+
+  getSiteLink() {
+    return this.project['live-link'];
   }
 
 }

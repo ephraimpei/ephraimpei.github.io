@@ -37,7 +37,7 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 4,
-    title: 'Nom noms (a Yelp clone)',
+    title: 'Nom noms',
     image: 'nom-noms.png',
     'live-link': 'https://nom-noms.herokuapp.com/',
     'github-link': 'https://github.com/ephraimpei/nom-noms',
