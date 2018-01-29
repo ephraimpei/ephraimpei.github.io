@@ -23,6 +23,7 @@ deploy:
   bucket: ephraimpei.com
   local-dir: "./dist"
   acl: public_read
+  skip_cleanup: true
   on:
     repo: ephraimpei/ephraimpei.github.io
     branch: master
