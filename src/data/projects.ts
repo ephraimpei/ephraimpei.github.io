@@ -13,7 +13,7 @@ export const PROJECTS: Project[] = [
     title: 'VICE Video Embedded Web Player',
     image: 'TBD...',
     'live-link': 'https://video.vice.com/en_us/embed/5966713ea2ab3dfe1f4296da',
-    'github-link': '[private repo]',
+    'github-link': null,
     technologies: [TYPESCRIPT, REACT, REDUX],
     description: 'A distributable script hosted on AWS S3 that loads the VICE Video embedded web player.'
   },
@@ -22,7 +22,7 @@ export const PROJECTS: Project[] = [
     title: 'VICE Video Site',
     image: 'TBD...',
     'live-link': 'https://video.vice.com',
-    'github-link': '[private repo]',
+    'github-link': null,
     technologies: [TYPESCRIPT, REACT, REDUX, NODE],
     description: 'The only place to watch VICE Video content!'
   },

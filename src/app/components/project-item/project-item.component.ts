@@ -7,8 +7,12 @@ import { Project } from '../../interfaces/project';
     <div class="project-item">
       <h3>{{project.title}}</h3>
       <p>{{project.description}}</p>
-      <h4><a href="{{project['live-link']}}">Live</a></h4>
-      <h4><a href="{{project['github-link']}}">Github</a></h4>
+      <app-technologies-tray [technologies]="project['technologies']"></app-technologies-tray>
+      <h4><a href="{{project['live-link']}}">Live Site</a></h4>
+      <div *ngIf="project['github-link']; else privateGithub">
+        <h4><a href="{{project['github-link']}}">Github Repo</a></h4>
+      </div>
+      <ng-template #privateGithub><p>[Private Repository]</p></ng-template>
     </div>
   `,
   styleUrls: ['./project-item.component.scss']

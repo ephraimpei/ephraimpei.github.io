@@ -3,7 +3,7 @@ export enum TECHNOLOGIES {
   RUBY_ON_RAILS = 'ruby-on-rails',
   JAVASCRIPT = 'javascript',
   REACT = 'react',
-  AWS_S3 = 's3',
+  AWS_S3 = 'aws-s3',
   POSTGRESQL = 'postgresql',
   SQL = 'sql',
   PYTHON = 'python',
@@ -21,24 +21,90 @@ export enum TECHNOLOGIES {
   STYLUS = 'stylus',
 }
 
-export const TECHNOLOGIES_SRC_MAPPING: { [key: string]: string } = {
-  [`${TECHNOLOGIES.RUBY}`]: 'assets/svg/ruby.svg',
-  [`${TECHNOLOGIES.RUBY_ON_RAILS}`]: 'assets/svg/ruby-on-rails.svg',
-  [`${TECHNOLOGIES.JAVASCRIPT}`]: 'assets/svg/javascript.svg',
-  [`${TECHNOLOGIES.AWS_S3}`]: 'assets/svg/aws-s3.svg',
-  [`${TECHNOLOGIES.POSTGRESQL}`]: 'assets/svg/postgresql.svg',
-  [`${TECHNOLOGIES.SQL}`]: 'assets/svg/sql.svg',
-  [`${TECHNOLOGIES.PYTHON}`]: 'assets/svg/python.svg',
-  [`${TECHNOLOGIES.DJANGO}`]: 'assets/svg/django.svg',
-  [`${TECHNOLOGIES.MONGO}`]: 'assets/svg/mongo.svg',
-  [`${TECHNOLOGIES.CLOUDFLARE}`]: 'assets/svg/cloudflare.svg',
-  [`${TECHNOLOGIES.ANGULAR}`]: 'assets/svg/angular.svg',
-  [`${TECHNOLOGIES.TYPESCRIPT}`]: 'assets/svg/typescript.svg',
-  [`${TECHNOLOGIES.SASS}`]: 'assets/svg/sass.svg',
-  [`${TECHNOLOGIES.D3}`]: 'assets/svg/d3.svg',
-  [`${TECHNOLOGIES.REDUX}`]: 'assets/svg/redux.svg',
-  [`${TECHNOLOGIES.NODE}`]: 'assets/svg/node.svg',
-  [`${TECHNOLOGIES.CSS3}`]: 'assets/svg/css3.svg',
-  [`${TECHNOLOGIES.HTML5}`]: 'assets/svg/html5.svg',
-  [`${TECHNOLOGIES.STYLUS}`]: 'assets/svg/stylus.svg',
+export const TECHNOLOGY_METADATA: {
+  [key: string]: {
+    svg: string;
+    href: string;
+  }
+} = {
+  [`${TECHNOLOGIES.RUBY}`]: {
+    svg: 'assets/svg/ruby.svg',
+    href: 'https://www.ruby-lang.org',
+  },
+  [`${TECHNOLOGIES.RUBY_ON_RAILS}`]: {
+    svg: 'assets/svg/ruby-on-rails.svg',
+    href: 'http://rubyonrails.org/',
+  },
+  [`${TECHNOLOGIES.JAVASCRIPT}`]: {
+    svg: 'assets/svg/javascript.svg',
+    href: 'https://www.javascript.com/',
+  },
+  [`${TECHNOLOGIES.REACT}`]: {
+    svg: 'assets/svg/react.svg',
+    href: 'https://reactjs.org/',
+  },
+  [`${TECHNOLOGIES.AWS_S3}`]: {
+    svg: 'assets/svg/aws-s3.svg',
+    href: 'https://aws.amazon.com/s3/',
+  },
+  [`${TECHNOLOGIES.POSTGRESQL}`]: {
+    svg: 'assets/svg/postgresql.svg',
+    href: 'https://www.postgresql.org/',
+  },
+  [`${TECHNOLOGIES.SQL}`]: {
+    svg: 'assets/svg/sql.svg',
+    href: 'https://www.mysql.com/',
+  },
+  [`${TECHNOLOGIES.PYTHON}`]: {
+    svg: 'assets/svg/python.svg',
+    href: 'https://www.python.org/',
+  },
+  [`${TECHNOLOGIES.DJANGO}`]: {
+    svg: 'assets/svg/django.svg',
+    href: 'https://www.djangoproject.com/',
+  },
+  [`${TECHNOLOGIES.MONGO}`]: {
+    svg: 'assets/svg/mongo.svg',
+    href: 'https://www.mongodb.com/',
+  },
+  [`${TECHNOLOGIES.CLOUDFLARE}`]: {
+    svg: 'assets/svg/cloudflare.svg',
+    href: 'https://www.cloudflare.com/',
+  },
+  [`${TECHNOLOGIES.ANGULAR}`]: {
+    svg: 'assets/svg/angular.svg',
+    href: 'https://angular.io/',
+  },
+  [`${TECHNOLOGIES.TYPESCRIPT}`]: {
+    svg: 'assets/svg/typescript.svg',
+    href: 'https://www.typescriptlang.org/',
+  },
+  [`${TECHNOLOGIES.SASS}`]: {
+    svg: 'assets/svg/sass.svg',
+    href: 'http://sass-lang.com/',
+  },
+  [`${TECHNOLOGIES.D3}`]: {
+    svg: 'assets/svg/d3.svg',
+    href: 'https://d3js.org/',
+  },
+  [`${TECHNOLOGIES.REDUX}`]: {
+    svg: 'assets/svg/redux.svg',
+    href: 'https://redux.js.org/',
+  },
+  [`${TECHNOLOGIES.NODE}`]: {
+    svg: 'assets/svg/node.svg',
+    href: 'https://nodejs.org',
+  },
+  [`${TECHNOLOGIES.CSS3}`]: {
+    svg: 'assets/svg/css3.svg',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3',
+  },
+  [`${TECHNOLOGIES.HTML5}`]: {
+    svg: 'assets/svg/html5.svg',
+    href: 'https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5',
+  },
+  [`${TECHNOLOGIES.STYLUS}`]: {
+    svg: 'assets/svg/stylus.svg',
+    href: 'http://stylus-lang.com/',
+  },
 };

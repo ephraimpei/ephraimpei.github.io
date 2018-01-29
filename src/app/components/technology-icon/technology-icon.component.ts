@@ -1,22 +1,24 @@
-import { Component, Input } from '@angular/core';
-import { TECHNOLOGIES, TECHNOLOGIES_SRC_MAPPING } from '../../constants/technologies';
+import { Component, Input, OnInit } from '@angular/core';
+import { TECHNOLOGIES, TECHNOLOGY_METADATA } from '../../constants/technologies';
 
 @Component({
   selector: 'app-technology-icon',
   template: `
-    <div class='technology-icon'>
-      <img src={{src}} />
-    </div>
+    <app-icon-link [href]="getHref()" [src]="getSvg()" type="external"></app-icon-link>
   `,
   styleUrls: ['./technology-icon.component.scss']
 })
 export class TechnologyIcon {
-  src: string;
 
   @Input()
   technology: TECHNOLOGIES;
 
-  constructor() {
-    this.src = TECHNOLOGIES_SRC_MAPPING[`${this.technology}`];
+  getSvg() {
+    return TECHNOLOGY_METADATA[`${this.technology}`].svg;
   }
+
+  getHref() {
+    return TECHNOLOGY_METADATA[`${this.technology}`].href;
+  }
+
 }
