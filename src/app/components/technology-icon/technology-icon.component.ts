@@ -11,7 +11,7 @@ import { TECHNOLOGIES, TECHNOLOGIES_SRC_MAPPING } from '../../constants/technolo
   styleUrls: ['./technology-icon.component.scss']
 })
 export class TechnologyIcon {
-  private src: string;
+  src: string;
 
   @Input()
   technology: TECHNOLOGIES;
