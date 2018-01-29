@@ -7,7 +7,7 @@ before_install:
 install:
 - npm install
 node_js:
-- 'node'
+- node
 script:
 - npm run build
 - npm run test
@@ -15,3 +15,14 @@ script:
 cache:
   directories:
   - node_modules
+deploy:
+  provider: s3
+  access_key_id: AKIAIGTONZLNGZGQ2G5Q
+  secret_access_key:
+    secure: UkLf9n8+D/hwgyHmWz+puSKab3+N8T1ECTdqxZFeljZiQKg8RtHrDtlnWyKRk6CTBilM/s6BgXAU7xJxcmu1ex32NQtf2Ag8y1N9qI2p5z/0/F5fDagsQewl1p5ZRLZQYIT0Y1nu6ilNJ85AzpKEyt/QIhTohvoAELjK/MPZoozhMjasOaKskPDN8Hxgh6FREVHeBtWUANqvTQGj7+EBjQs+nwZR/LOvaQHNmBQB+A87tX5AyBI3JgHsk9S+hq1EKDH1mzwU251fZwQ/HKCqo2ViSyIK+lf5enRZ+iNU0nFiN0xj1knAHNzbGijqnpWjVRAc7A2ljdSrycrJC0gldVP34bxSBIOxIaEE6OuEfndoB7brX9Hn69DL7ddiYtYCdZScg354wsjaoxuaSPlJI5rJOk6joMwpnqkLtPDq2mCO/nhaPUMhetRNoiviy2iXn1A8pHmRTOFxdtTUW4BIFvgI/tnIEejsuRx1wUFdZGJLPhSuEWvadcFigAvrftP/2daxshjXCpHJCYcEFILB5djAJxseRApZd56uNA4SAtfd0J+zeRpDpCa+wQXXId+YmYsgXRPG5DoZxjxv+RufAZCrYv4wgnc698HnVv+i3iUtrSMqOgSE+0cYTp3wrDxQJxcCewEoVACJwrU103knQB5EYUygWEBXlBkkhYBiooE=
+  bucket: ephraimpei.com
+  local-dir: "./dist"
+  acl: public_read
+  on:
+    repo: ephraimpei/ephraimpei.github.io
+    branch: master
