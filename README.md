@@ -1,6 +1,7 @@
 # Ephraim Pei's Personal Site
 
 [![Build Status](https://travis-ci.org/ephraimpei/ephraimpei.github.io.svg?branch=master)](https://travis-ci.org/ephraimpei/ephraimpei.github.io)
+[![Coverage Status](https://coveralls.io/repos/github/ephraimpei/ephraimpei.github.io/badge.svg?branch=master)](https://coveralls.io/github/ephraimpei/ephraimpei.github.io?branch=master)
 
 This personal site is an entirely static site (no backend) that was built with some of today's lastest and greatest Front End technologies.
 
@@ -8,8 +9,9 @@ This personal site is an entirely static site (no backend) that was built with s
 - Angular5 components and routing
 - Mobile first responsive SASS
 - CSS3 animations
-- AWS S3 Hosting
+- AWS S3 Static Website Hosting
 - Cloudflare CDN propagation
+- Travis CI builds and automated AWS S3 deploys
 
 ## Technologies
 - [Angular CLI](https://github.com/angular/angular-cli)
@@ -21,6 +23,7 @@ This personal site is an entirely static site (no backend) that was built with s
   5. Webpack
 - AWS CLI
 - Cloudflare
+- Travis CI
 
 ## Development server
 

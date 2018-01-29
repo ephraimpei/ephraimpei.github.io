@@ -3,10 +3,7 @@ import { TECHNOLOGIES, TECHNOLOGY_METADATA } from '../../constants/technologies'
 
 @Component({
   selector: 'app-technology-icon',
-  template: `
-    <app-icon-link [href]="getHref()" [src]="getSvg()" type="external"></app-icon-link>
-  `,
-  styleUrls: ['./technology-icon.component.scss']
+  template: `<app-icon-link [href]="getHref()" [src]="getSvg()" type="external"></app-icon-link>`
 })
 export class TechnologyIcon {
 

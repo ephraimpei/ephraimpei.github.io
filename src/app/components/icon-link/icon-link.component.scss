@@ -57,3 +57,23 @@
     }
   }
 }
+
+:host-context(.technologies-tray)
+{
+  .icon-link
+  {
+    display: inline-block;
+
+    img
+    {
+      height: 50px;
+      width: 50px;
+
+      @include respond-above(tablet)
+      {
+        height: 60px;
+        width: 60px;
+      }
+    }
+  }
+}

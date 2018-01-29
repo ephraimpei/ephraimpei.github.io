@@ -4,7 +4,7 @@ import { TECHNOLOGIES } from '../app/constants/technologies';
 const {
   RUBY, RUBY_ON_RAILS, JAVASCRIPT, REACT, MONGO, CLOUDFLARE, SASS,
   AWS_S3, POSTGRESQL, SQL, PYTHON, DJANGO, ANGULAR, TYPESCRIPT, D3,
-  REDUX, NODE
+  REDUX, NODE, TRAVIS
 } = TECHNOLOGIES;
 
 export const PROJECTS: Project[] = [
@@ -14,7 +14,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://video.vice.com/en_us/embed/5966713ea2ab3dfe1f4296da',
     'github-link': null,
-    technologies: [TYPESCRIPT, REACT, REDUX],
+    technologies: [TYPESCRIPT, REACT, REDUX, TRAVIS],
     description: 'A distributable script hosted on AWS S3 that loads the VICE Video embedded web player.'
   },
   {
@@ -23,7 +23,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://video.vice.com',
     'github-link': null,
-    technologies: [TYPESCRIPT, REACT, REDUX, NODE],
+    technologies: [TYPESCRIPT, REACT, REDUX, NODE, TRAVIS],
     description: 'The only place to watch VICE Video content!'
   },
   {
@@ -32,7 +32,7 @@ export const PROJECTS: Project[] = [
     image: 'TBD...',
     'live-link': 'https://www.ephraimpei.com/',
     'github-link': 'https://github.com/ephraimpei/ephraimpei.github.io',
-    technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE],
+    technologies: [ANGULAR, TYPESCRIPT, SASS, AWS_S3, CLOUDFLARE, TRAVIS],
     description: 'Static site hosted on AWS, propagated through CloudFlare.'
   },
   {

@@ -19,6 +19,7 @@ export enum TECHNOLOGIES {
   CSS3 = 'css3',
   HTML5 = 'html5',
   STYLUS = 'stylus',
+  TRAVIS = 'travis-ci',
 }
 
 export const TECHNOLOGY_METADATA: {
@@ -106,5 +107,9 @@ export const TECHNOLOGY_METADATA: {
   [`${TECHNOLOGIES.STYLUS}`]: {
     svg: 'assets/svg/stylus.svg',
     href: 'http://stylus-lang.com/',
+  },
+  [`${TECHNOLOGIES.TRAVIS}`]: {
+    svg: 'assets/svg/travis-ci.svg',
+    href: 'https://travis-ci.com/',
   },
 };

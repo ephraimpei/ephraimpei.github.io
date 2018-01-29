@@ -1,4 +1,17 @@
-:host ::ng-deep .icon-link
+@import 'mixins';
+
+.technologies-tray
 {
-  margin: 0 10px;
+  margin: auto;
+  width: 80%;
+
+  &::ng-deep .icon-link
+  {
+    margin: 0 10px;
+  }
+
+  @include respond-above(tablet)
+  {
+    width: 100%;
+  }
 }
