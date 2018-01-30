@@ -10,7 +10,8 @@
       "assets": [
         "assets/svg",
         "assets/favicons",
-        "assets/png"
+        "assets/png",
+        "assets/pdf"
       ],
       "index": "index.html",
       "main": "main.ts",

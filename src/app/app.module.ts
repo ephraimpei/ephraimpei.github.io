@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 // Root
 import { AppRoot } from './root/app.root';
@@ -8,6 +9,7 @@ import { AppRoot } from './root/app.root';
 // Components
 import {
   IconLink,
+  ContactForm,
   ContentSpace,
   ProjectItem,
   ProjectList,
@@ -27,7 +29,7 @@ import {
 import {
   HomePage,
   ProjectsPage,
-  ResumePage,
+  ContactPage,
   AboutPage,
   NotFoundPage,
 } from './pages';
@@ -45,13 +47,14 @@ import { appRoutes } from './routes';
     AppRoot,
     HomePage,
     ProjectsPage,
-    ResumePage,
+    ContactPage,
     AboutPage,
     NotFoundPage,
     NavBarLayout,
     SocialIconsTray,
     TechnologiesTray,
     IconLink,
+    ContactForm,
     ContentSpace,
     ProjectItem,
     ProjectList,
@@ -61,6 +64,7 @@ import { appRoutes } from './routes';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     RouterModule.forRoot(appRoutes)
   ],
   providers: [ProjectService],

@@ -1,0 +1,14 @@
+<form id="contact-form" #f="ngForm" (ngSubmit)="onSubmit()">
+  <input
+    [(ngModel)]="contactInfo.name"
+    minlength="4" name="name" placeholder="Your name" tabindex="1" required autofocus>
+  <input
+    [(ngModel)]="contactInfo.subject"
+    minlength="8" name="subject" placeholder="Subject line" tabindex="3" required>
+  <textarea
+    [(ngModel)]="contactInfo.body" 
+    minlength="8" name="body" placeholder="Type your message here...." tabindex="4" required></textarea>
+  <button
+    name="submit"
+    type="submit" [disabled]="f.invalid" id="contact-form-submit">Send e-mail</button>
+</form>

@@ -1,0 +1,32 @@
+@import 'variables';
+
+.contact-page
+{
+  height: 100%;
+
+  p
+  {
+    text-align: center;
+    margin: 15x 0;
+    position: relative;
+
+    a
+    {
+      font-weight: $bold;
+    }
+  }
+
+  p:first-child
+  {
+    margin-top: 30px;
+  }
+
+  .contact-form-wrapper
+  {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+  }
+}

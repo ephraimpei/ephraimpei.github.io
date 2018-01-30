@@ -3,8 +3,8 @@ import { Routes } from '@angular/router';
 import {
   HomePage,
   ProjectsPage,
-  ResumePage,
   AboutPage,
+  ContactPage,
   NotFoundPage
 } from './pages';
 
@@ -18,12 +18,12 @@ export const appRoutes: Routes = [
     component: ProjectsPage
   },
   {
-    path: 'resume',
-    component: ResumePage
-  },
-  {
     path: 'about',
     component: AboutPage
+  },
+  {
+    path: 'contact',
+    component: ContactPage
   },
   {
     path: '**',
