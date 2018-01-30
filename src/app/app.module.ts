@@ -31,6 +31,7 @@ import {
   ProjectsPage,
   ContactPage,
   AboutPage,
+  ResumePage,
   NotFoundPage,
 } from './pages';
 
@@ -49,6 +50,7 @@ import { appRoutes } from './routes';
     ProjectsPage,
     ContactPage,
     AboutPage,
+    ResumePage,
     NotFoundPage,
     NavBarLayout,
     SocialIconsTray,

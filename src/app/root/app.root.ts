@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-const CURTAINS_PAGES = ['/thoughts', '/projects'];
+const CURTAINS_PAGES = ['/projects'];
 
-type Page = 'home' | 'about' | 'projects' | 'resume';
+type Page = 'home' | 'about' | 'projects' | 'resume' | 'contact';
 
 @Component({
   selector: 'app-root',
@@ -37,7 +37,9 @@ export class AppRoot {
     switch (this.currentPage) {
       case 'home': return 'small-bg';
       case 'about': return 'x-small-bg';
-      default: return '';
+      case 'projects': return '';
+      case 'contact': return '';
+      default: return 'small-bg';
     }
   }
 

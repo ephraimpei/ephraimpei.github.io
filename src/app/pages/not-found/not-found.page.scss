@@ -1,0 +1,31 @@
+@import 'mixins';
+
+.not-found-page
+{
+  *
+  {
+    text-align: center;
+  }
+
+  h2
+  {
+    font-size: 2rem;
+    margin: 50px 0 0;
+
+    @include respond-above(tablet)
+    {
+      font-size: 3rem;
+    }
+  }
+
+  h1
+  {
+    font-size: 7.5rem;
+    margin: 25px 0;
+
+    @include respond-above(tablet)
+    {
+      font-size: 10rem;
+    }
+  }
+}
