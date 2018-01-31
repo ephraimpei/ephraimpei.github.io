@@ -5,7 +5,7 @@
 
 This personal site is an entirely static site (no backend) that was built with some of today's lastest and greatest Front End technologies.
 
-Go [here](http://ephraimpei.me.s3-website-us-east-1.amazonaws.com) for the live site!
+Go [here](http://ephraimpei.me) for the live site!
 
 ## Features
 - Angular5 components and routing
