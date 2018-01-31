@@ -11,7 +11,7 @@
 
   &::ng-deep summary
   {
-    overflow-y: scroll;
+    @include apply-cross-browser-y-scrolling();
   }
 }
 

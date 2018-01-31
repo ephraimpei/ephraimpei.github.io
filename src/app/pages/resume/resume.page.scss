@@ -51,6 +51,7 @@
     overflow: auto;
     padding-bottom: 100%;
     -webkit-overflow-scrolling: touch; // necessary for touch scroll on mobile
+    -ms-overflow-style: scrollbar; // necessary for scroll on Edge
 
     iframe
     {

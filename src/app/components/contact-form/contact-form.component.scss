@@ -3,7 +3,7 @@
 
 #contact-form {
 	padding: 25px 0;
-  
+
   *
   {
     text-align: center;
@@ -33,6 +33,8 @@
     &.ng-valid
     {
       box-shadow: green 0px 0px 0.5rem 0.25rem;
+      -webkit-box-shadow: green 0px 0px 0.5rem 0.25rem;
+      -moz-box-shadow: green 0px 0px 0.5rem 0.25rem;
     }
 
     @include respond-above(tablet)

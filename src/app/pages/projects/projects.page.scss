@@ -1,8 +1,10 @@
+@import 'mixins';
+
 .projects-page
 {
+  @include apply-cross-browser-y-scrolling();
   height: 100%;
   padding: 10px 15px 0;
-  overflow: scroll;
 
   &::ng-deep .project-list
   {
